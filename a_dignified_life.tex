@@ -1,0 +1,50 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{preamble}
+
+\title{A Dignified Life}
+\author{Robin Eklind}
+
+\begin{document}
+
+% === [ Front matter ] =========================================================
+
+\pagenumbering{roman}
+
+% --- [ Title page ] -----------------------------------------------------------
+
+\maketitle
+
+\clearpage
+
+% --- [ Acknowledgements ] -----------------------------------------------------
+
+\include{sections/acknowledgements}
+
+% --- [ Table of contents ] ----------------------------------------------------
+
+\tableofcontents
+
+\clearpage
+
+% --- [ Blank page ] -----------------------------------------------------------
+
+% No writing is complete without at least one blank page.
+
+\thispagestyle{empty}
+
+\vspace*{2.5cm}
+
+\begin{center}
+	\textit{This page is unintentionally left blank.}
+\end{center}
+
+\clearpage
+
+% === [ Main matter ] ==========================================================
+
+\pagenumbering{arabic}
+
+\include{sections/introduction}
+
+\end{document}
